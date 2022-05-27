@@ -27,6 +27,11 @@ ul {
 img {
     width: 40px;
     height: auto;
+    margin: 10px;
+}
+
+h6 {
+    margin-bottom: 0;
 }
 
 .textclass {
@@ -40,6 +45,7 @@ img {
     justify-content: space-between;
     padding: 15px;
     border: 1px solid black;
+    align-items: center;
 }
 
 .user-profilo {
