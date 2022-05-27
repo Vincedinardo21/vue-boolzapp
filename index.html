@@ -17,12 +17,16 @@
 
             <!-- Mia icona -->
             <div class="row">
-                <div class="col-4">
-                    <img src="img/iconme.png" alt="my-icon">
-                    <h3>Vincenzo</h3>
-                    <i class="fas fa-circle-notch"></i>
-                    <i class="fas fa-comment-alt"></i>
-                    <i class="fas fa-ellipsis-v"></i>
+                <div class="col-4 textclass">
+                    <div class="me-container">
+                        <img src="img/iconme.png" alt="my-icon">
+                        <h6>Vincenzo</h6>
+                    </div>                   
+                    <div class="icon-container">
+                        <i class="fas fa-circle-notch"></i>
+                        <i class="fas fa-comment-alt"></i>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>    
                 </div>
                 <div class="col-8"></div>
             </div>
@@ -36,10 +40,14 @@
                     <!-- Ciclo for -->
                     <div class="users-container">
                         <ul>
-                            <li v-for="(item, i) in contacts" :key="i">
-                                <img :src="item.avatar" :alt="item.name">
-                                {{item.name}}
-                                <div>Ultimo messaggio inviato</div>
+                            <li v-for="(item, i) in contacts" class="list-style" :key="i">
+                                <div class="user-profilo">
+                                    <img :src="item.avatar" :alt="item.name">
+                                    <div>
+                                        <h6>{{item.name}}</h6>
+                                        <div class="last-msg">Ultimo messaggio inviato</div>
+                                    </div>
+                                </div>                 
                                 <div class="ultimo-accesso">12:00</div>
                             </li>
                         </ul>

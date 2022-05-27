@@ -7,7 +7,7 @@
 
 [class*="col-"] {
     border: 1px solid black;
-    min-height: 100px;
+    min-height: 5px;
 }
 
 /* Colonna di sinistra */
@@ -19,10 +19,38 @@ ul {
     list-style-type: none;
 }
 
-.users-container img {
-    width: 50px;
+.me-container {
+    display: flex;
+    align-items: center;
 }
 
+img {
+    width: 40px;
+    height: auto;
+}
+
+.textclass {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-style{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid black;
+}
+
+.user-profilo {
+    display: flex;   
+}
+
+.last-msg {
+    font-size: 10px;
+}
+
+/* Colonna di destra */
 .msg-area {
     background-image: url("../img/whappback.jpg");
     background-repeat: no-repeat;
