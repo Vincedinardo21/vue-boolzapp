@@ -36,7 +36,10 @@
                     <!-- Ciclo for -->
                     <div class="users-container">
                         <ul>
-                            <li v-for="(item, i) in contacts" :key="i">{{item.name}}</li>
+                            <li v-for="(item, i) in contacts" :key="i">
+                                <img :src="item.avatar" :alt="item.name">
+                                {{item.name}}
+                            </li>
                         </ul>
                     </div>
                     

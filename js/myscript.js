@@ -3,8 +3,8 @@ const myApp = new Vue({
     data : {
         contacts : [
             {
-                name : "Teodorico",
-                avatar : 1,
+                name : "Teodorica",
+                avatar : "img/icon1.png",
                 visible : true,
                 messages : [
                     {
@@ -26,29 +26,7 @@ const myApp = new Vue({
             },
             {
                 name : "Domiziana",
-                avatar : 2,
-                visible : true,
-                messages : [
-                    {
-                        date : "10/12/2022 15:30:55",
-                        message : "Ciao Domiziana",
-                        stato : "sent"
-                    },
-                    {
-                        date : "10/12/2022 20:30:58",
-                        message : "Oggi a che ora ci vediamo?",
-                        stato : "sent"
-                    },
-                    {
-                        date : "10/12/2022 22:35:58",
-                        message : "Mi dispiace, oggi non posso",
-                        stato : "received"
-                    },
-                ]
-            },
-            {
-                name : "Orazio",
-                avatar : 2,
+                avatar : "img/icon2.png",
                 visible : true,
                 messages : [
                     {
@@ -70,7 +48,29 @@ const myApp = new Vue({
             },
             {
                 name : "Alice",
-                avatar : 2,
+                avatar : "img/icon3.png",
+                visible : true,
+                messages : [
+                    {
+                        date : "10/12/2022 15:30:55",
+                        message : "Ciao Domiziana",
+                        stato : "sent"
+                    },
+                    {
+                        date : "10/12/2022 20:30:58",
+                        message : "Oggi a che ora ci vediamo?",
+                        stato : "sent"
+                    },
+                    {
+                        date : "10/12/2022 22:35:58",
+                        message : "Mi dispiace, oggi non posso",
+                        stato : "received"
+                    },
+                ]
+            },
+            {
+                name : "Omar",
+                avatar : "img/icon4.png",
                 visible : true,
                 messages : [
                     {
@@ -92,7 +92,7 @@ const myApp = new Vue({
             },
             {
                 name : "Guglielmo",
-                avatar : 2,
+                avatar : "img/icon5.png",
                 visible : true,
                 messages : [
                     {
@@ -114,8 +114,8 @@ const myApp = new Vue({
             },
             {
                 name : "Jessico Calcetto",
-                avatar : 2,
-                visible : true,
+                avatar : "img/icon7.png",
+                visible : false,
                 messages : [
                     {
                         date : "10/12/2022 15:30:55",
@@ -136,7 +136,7 @@ const myApp = new Vue({
             },
             {
                 name : "Gennaro",
-                avatar : 2,
+                avatar : "img/icon5.png",
                 visible : true,
                 messages : [
                     {
@@ -158,8 +158,8 @@ const myApp = new Vue({
             },
             {
                 name : "Tizio di Fortnite",
-                avatar : 2,
-                visible : true,
+                avatar : "img/icon7.png",
+                visible : false,
                 messages : [
                     {
                         date : "10/12/2022 15:30:55",
