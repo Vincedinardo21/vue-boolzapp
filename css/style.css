@@ -29,14 +29,28 @@ ul {
     background-size: cover;
 }
 
-.my-message, .other-message {
+/* .my-message, .other-message {
     width: 300px;
-}
+} */
 
 .my-message {
-    background-color: aquamarine;
+    display: flex;
+    justify-content: end;
 }
 
 .other-message {
-    background-color: white;
+    display: flex;
 }
+
+.my-message div {
+    background-color: aquamarine;
+    width: 300px;
+}
+
+.other-message div {
+    background-color: white;
+    width: 300px;
+    /* Debug */
+    border: 1px solid black;
+}
+
