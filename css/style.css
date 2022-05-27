@@ -18,3 +18,25 @@
 ul {
     list-style-type: none;
 }
+
+.users-container img {
+    width: 50px;
+}
+
+.msg-area {
+    background-image: url("../img/whappback.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.my-message, .other-message {
+    width: 300px;
+}
+
+.my-message {
+    background-color: aquamarine;
+}
+
+.other-message {
+    background-color: white;
+}

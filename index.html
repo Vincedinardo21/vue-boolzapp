@@ -39,12 +39,21 @@
                             <li v-for="(item, i) in contacts" :key="i">
                                 <img :src="item.avatar" :alt="item.name">
                                 {{item.name}}
+                                <div>Ultimo messaggio inviato</div>
+                                <div class="ultimo-accesso">12:00</div>
                             </li>
                         </ul>
                     </div>
                     
                 </div>
-                <div class="col-8"></div>
+
+                <!-- Messages Area -->
+                <div class="col-8 msg-area">
+                    <ul class="msg-list">
+                        <li class="my-message">Mio messaggio</li>
+                        <li class="other-message">Messaggio utente</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
