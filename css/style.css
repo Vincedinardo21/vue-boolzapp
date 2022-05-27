@@ -29,10 +29,6 @@ ul {
     background-size: cover;
 }
 
-/* .my-message, .other-message {
-    width: 300px;
-} */
-
 .my-message {
     display: flex;
     justify-content: end;
@@ -42,15 +38,20 @@ ul {
     display: flex;
 }
 
+.my-message div, .other-message div{
+    margin: 5px;
+    padding: 10px;
+    width: 300px;
+    border-radius: 10px;
+    /* Debug */
+    border: 1px solid black;
+}
+
 .my-message div {
     background-color: aquamarine;
-    width: 300px;
 }
 
 .other-message div {
     background-color: white;
-    width: 300px;
-    /* Debug */
-    border: 1px solid black;
 }
 
