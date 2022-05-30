@@ -58,8 +58,8 @@
                 <!-- Messages Area -->
                 <div class="col-8 msg-area">
                     <ul class="msg-list">
-                        <li v-for="(msg, i) in contacts.messages" class="my-message">
-                            <div>Mio messaggio</div>
+                        <li v-for="(msg, i) in contacts[0].messages" :class="msg.stato === 'sent' ? 'my-message' : 'other-message'">
+                            <div>{{msg.message}}</div>
                         </li>
                         <!-- <li class="my-message">
                             <div>Mio messaggio 2</div>
