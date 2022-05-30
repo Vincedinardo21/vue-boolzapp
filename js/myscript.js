@@ -1,6 +1,7 @@
 const myApp = new Vue({
     el : "#app",
     data : {
+        activeChat : 0,
         contacts : [
             {
                 name : "Teodorica",
@@ -59,7 +60,7 @@ const myApp = new Vue({
                     {
                         date : "10/12/2022 20:30:58",
                         message : "Si, tutto ok!",
-                        stato : "sent"
+                        stato : "received"
                     },
                 ]
             },
@@ -114,17 +115,17 @@ const myApp = new Vue({
                 messages : [
                     {
                         date : "10/12/2022 15:30:55",
-                        message : "Ciao Domiziana",
-                        stato : "sent"
+                        message : "Oggi dobbiamo vincere!",
+                        stato : "received"
                     },
                     {
                         date : "10/12/2022 20:30:58",
-                        message : "Oggi a che ora ci vediamo?",
+                        message : "Contaci!",
                         stato : "sent"
                     },
                     {
                         date : "10/12/2022 22:35:58",
-                        message : "Mi dispiace, oggi non posso",
+                        message : "Non hai fatto un tiro oggi!",
                         stato : "received"
                     },
                 ]
@@ -136,18 +137,18 @@ const myApp = new Vue({
                 messages : [
                     {
                         date : "10/12/2022 15:30:55",
-                        message : "Ciao Domiziana",
+                        message : "Hai consegnato il sito?",
                         stato : "sent"
                     },
                     {
                         date : "10/12/2022 20:30:58",
-                        message : "Oggi a che ora ci vediamo?",
-                        stato : "sent"
+                        message : "Non ancora, ci sto lavorando, tu?",
+                        stato : "received"
                     },
                     {
                         date : "10/12/2022 22:35:58",
-                        message : "Mi dispiace, oggi non posso",
-                        stato : "received"
+                        message : "Idem",
+                        stato : "sent"
                     },
                 ]
             },
@@ -174,5 +175,11 @@ const myApp = new Vue({
                 ]
             },
         ]
+    },
+    methods : {
+        clickOnChat(element){
+            this.activeChat = element;
+            console.log(this.contacts[element].name);
+        }
     }
 });

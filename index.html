@@ -28,21 +28,33 @@
                         <i class="fas fa-ellipsis-v"></i>
                     </div>    
                 </div>
-                <div class="col-8"></div>
+
+                <!-- Area settings -->
+                <div class="col-8 nopadding">
+                    <div class="area-settings">
+                        <div class="group-settings">
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-paperclip"></i>
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="row">
                 <div class="col-4 nopadding">
                     <div class="area-notifiche">
                         <i class="fas fa-bell-slash"></i>
-                        <h6>Ricevi notifiche di nuovi messaggi</h6>
-                        <a href="#">Attiva notifiche desktop</a>
+                        <div>
+                            <h6>Ricevi notifiche di nuovi messaggi</h6>
+                            <a href="#">Attiva notifiche desktop</a>
+                        </div>                       
                     </div>
 
                     <!-- Ciclo for -->
                     <div class="users-container">
-                        <ul>
-                            <li v-for="(item, i) in contacts" class="list-style" :key="i">
+                        <ul class="nopadding">
+                            <li v-for="(item, i) in contacts" class="list-style" :key="i" @click="clickOnChat(i)">
                                 <div class="user-profilo">
                                     <img :src="item.avatar" :alt="item.name">
                                     <div>
@@ -58,9 +70,9 @@
                 </div>
 
                 <!-- Messages Area -->
-                <div class="col-8 msg-area">
+                <div class="col-8 msg-area nopadding">
                     <ul class="msg-list">
-                        <li v-for="(msg, i) in contacts[3].messages" :class="msg.stato === 'sent' ? 'my-message' : 'other-message'">
+                        <li v-for="(msg, i) in contacts[activeChat].messages" :class="msg.stato === 'sent' ? 'my-message' : 'other-message'">
                             <div>{{msg.message}}</div>
                         </li>
                         <!-- <li class="my-message">
@@ -70,6 +82,10 @@
                             <div>Messaggio utente</div>
                         </li> -->
                     </ul>
+
+                    <div class="input-text">
+
+                    </div>
                 </div>
             </div>
         </div>
