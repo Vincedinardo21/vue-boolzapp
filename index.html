@@ -58,15 +58,15 @@
                 <!-- Messages Area -->
                 <div class="col-8 msg-area">
                     <ul class="msg-list">
-                        <li class="my-message">
+                        <li v-for="(msg, i) in contacts.messages" class="my-message">
                             <div>Mio messaggio</div>
                         </li>
-                        <li class="my-message">
+                        <!-- <li class="my-message">
                             <div>Mio messaggio 2</div>
                         </li>
                         <li class="other-message">
                             <div>Messaggio utente</div>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
