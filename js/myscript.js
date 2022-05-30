@@ -19,7 +19,7 @@ const myApp = new Vue({
                     },
                     {
                         date : "10/12/2022 22:35:58",
-                        message : "Si, ma mi hanno licenziato subito",
+                        message : "Si, ma mi hanno licenziata subito",
                         stato : "received"
                     },
                 ]
@@ -53,18 +53,13 @@ const myApp = new Vue({
                 messages : [
                     {
                         date : "10/12/2022 15:30:55",
-                        message : "Ciao Domiziana",
+                        message : "Hai ricevuto la mail?",
                         stato : "sent"
                     },
                     {
                         date : "10/12/2022 20:30:58",
-                        message : "Oggi a che ora ci vediamo?",
+                        message : "Si, tutto ok!",
                         stato : "sent"
-                    },
-                    {
-                        date : "10/12/2022 22:35:58",
-                        message : "Mi dispiace, oggi non posso",
-                        stato : "received"
                     },
                 ]
             },
@@ -75,19 +70,24 @@ const myApp = new Vue({
                 messages : [
                     {
                         date : "10/12/2022 15:30:55",
-                        message : "Ciao Domiziana",
-                        stato : "sent"
+                        message : "Ci sei per una partita a biliardo?",
+                        stato : "received"
                     },
                     {
                         date : "10/12/2022 20:30:58",
-                        message : "Oggi a che ora ci vediamo?",
+                        message : "Molto volentieri!",
                         stato : "sent"
                     },
                     {
                         date : "10/12/2022 22:35:58",
-                        message : "Mi dispiace, oggi non posso",
+                        message : "Ci vediamo alle 17 al bar",
                         stato : "received"
                     },
+                    {
+                        date : "10/12/2022 22:35:58",
+                        message : "A dopo.",
+                        stato : "sent"
+                    }
                 ]
             },
             {
@@ -97,17 +97,12 @@ const myApp = new Vue({
                 messages : [
                     {
                         date : "10/12/2022 15:30:55",
-                        message : "Ciao Domiziana",
+                        message : "Guglielmo, hai pagato il fantacalcio?",
                         stato : "sent"
                     },
                     {
                         date : "10/12/2022 20:30:58",
-                        message : "Oggi a che ora ci vediamo?",
-                        stato : "sent"
-                    },
-                    {
-                        date : "10/12/2022 22:35:58",
-                        message : "Mi dispiace, oggi non posso",
+                        message : "Scusa ma chi sei?",
                         stato : "received"
                     },
                 ]
@@ -163,17 +158,17 @@ const myApp = new Vue({
                 messages : [
                     {
                         date : "10/12/2022 15:30:55",
-                        message : "Ciao Domiziana",
+                        message : "Oggi partita online?",
                         stato : "sent"
                     },
                     {
                         date : "10/12/2022 20:30:58",
-                        message : "Oggi a che ora ci vediamo?",
+                        message : "Ho il pomeriggio libero",
                         stato : "sent"
                     },
                     {
                         date : "10/12/2022 22:35:58",
-                        message : "Mi dispiace, oggi non posso",
+                        message : "Oggi no, ho il pc in manutenzione",
                         stato : "received"
                     },
                 ]

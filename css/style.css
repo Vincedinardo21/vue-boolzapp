@@ -12,7 +12,8 @@
 
 /* Colonna di sinistra */
 .area-notifiche {
-    background-color: aqua;
+    background-color: rgb(142, 218, 252);
+    padding: 10px;
 }
 
 ul {
@@ -24,10 +25,19 @@ ul {
     align-items: center;
 }
 
+.me-container img {
+    background-color: white;
+    border-radius: 50px;
+}
+
 img {
     width: 40px;
     height: auto;
     margin: 10px;
+}
+
+.fas {
+    color: rgb(177, 177, 177);
 }
 
 h6 {
@@ -38,6 +48,7 @@ h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: rgb(234, 234, 234)
 }
 
 .list-style{
@@ -54,6 +65,13 @@ h6 {
 
 .last-msg {
     font-size: 10px;
+}
+
+.fa-bell-slash{
+    background-color: white;
+    padding: 10px;
+    border-radius: 50px;
+    color: rgb(142, 218, 252);
 }
 
 /* Colonna di destra */
@@ -87,6 +105,10 @@ h6 {
 
 .other-message div {
     background-color: white;
+}
+
+.nopadding{
+    padding: 0;
 }
 
 
