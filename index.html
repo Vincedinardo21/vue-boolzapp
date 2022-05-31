@@ -36,11 +36,10 @@
                             <img :src="contacts[activeChat].avatar" :alt="contacts[activeChat].name">
                             <div>
                                 <h6>{{contacts[activeChat].name}}</h6>
-                                <div class="last-msg">Ultimo messaggio inviato</div>
+                                <div class="last-msg">Ultimo accesso oggi alle 12:00</div>
                             </div>
                         </div>
-                        <!-- <img :src="contacts[activeChat].avatar" :alt="contacts[activeChat].name">
-                        <h6>{{contacts[activeChat].name}}</h6> -->
+        
                         <div class="group-settings">
                             <i class="fas fa-search"></i>
                             <i class="fas fa-paperclip"></i>
@@ -97,10 +96,6 @@
                         <i class="far fa-smile"></i>
                         <input class="my-msg-input" v-model="newMessage" placeholder="Scrivi un messaggio" @keyup.enter = "addMessage">
                         <i class="fas fa-microphone"></i>
-                        <!-- <span>{{contacts[activeChat].name}}</span> -->
-                        <!-- Debug button -->
-                        <!-- <span>{{newMessage}}</span> -->
-                        <!-- <button @click="addMessage">Invia</button> -->
                     </div>
                 </div>
             </div>
