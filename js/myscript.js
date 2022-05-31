@@ -188,7 +188,7 @@ const myApp = new Vue({
         addMessage(){ 
             let thisContact = this.contacts[this.activeChat];           
             thisContact.messages.push({
-                date : "10/12/2022 23:34:12",
+                date : "23:34",
                 message : this.newMessage,
                 stato : "sent"
             });
@@ -197,7 +197,7 @@ const myApp = new Vue({
             // Risposta utente dopo 1 sec
             setTimeout(() => {
                 thisContact.messages.push({
-                    date : "11/12/2022 23:34:12",
+                    date : "23:34",
                     message : "Ok",
                     stato : "received"
                 });
