@@ -13,7 +13,6 @@
 #app {
     background-image: url("../img/sfondo.png");
     background-size: cover;
-    /* background-color: rgb(219, 219, 219); */
     padding: 15px;
 }
 
@@ -107,6 +106,10 @@ h6 {
 }
 
 .users-container li:hover {
+    background-color: rgb(234, 234, 234);
+}
+
+.class-on-click {
     background-color: rgb(234, 234, 234);
 }
 

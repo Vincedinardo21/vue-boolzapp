@@ -69,7 +69,7 @@
                     <!-- Ciclo for -->
                     <div class="users-container">
                         <ul class="nopadding">
-                            <li v-for="(item, i) in contacts" class="list-style" :key="i" @click="clickOnChat(i)">
+                            <li v-for="(item, i) in contacts" class="list-style" :key="i" :class="i === activeChat ? 'class-on-click' : ''" @click="clickOnChat(i)">
                                 <div class="user-profilo">
                                     <img :src="item.avatar" :alt="item.name">
                                     <div>
