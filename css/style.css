@@ -138,6 +138,14 @@ h6 {
     justify-content: end;
 }
 
+.message-box {
+    position: relative;
+}
+
+/* .message-box > span {
+    padding: 5px;
+} */
+
 .other-message {
     display: flex;
 }
@@ -200,6 +208,14 @@ h6 {
     border-radius: 5px;
     padding: 5px;
     border: none;
+}
+
+.orario {
+    font-size: 10px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 5px;
 }
 
 

@@ -88,7 +88,10 @@
                 <div class="col-8 msg-area nopadding">
                     <ul class="msg-list">
                         <li v-for="(msg, i) in contacts[activeChat].messages" :class="msg.stato === 'sent' ? 'my-message' : 'other-message'">
-                            <div>{{msg.message}}</div>
+                            <div class="message-box">
+                                <span>{{msg.message}}</span>
+                                <span class="orario">{{msg.date}}</span>
+                            </div>
                         </li>
                     </ul>
 

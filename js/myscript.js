@@ -10,17 +10,17 @@ const myApp = new Vue({
                 visible : true,
                 messages : [
                     {
-                        date : "10/12/2022 15:30:55",
+                        date : "15:30",
                         message : "Hey, Teo",
                         stato : "sent"
                     },
                     {
-                        date : "10/12/2022 20:30:58",
+                        date : "15:30",
                         message : "Ho saputo che hai trovato un lavoro!",
                         stato : "sent"
                     },
                     {
-                        date : "10/12/2022 22:35:58",
+                        date : "15:35",
                         message : "Si, ma mi hanno licenziata subito",
                         stato : "received"
                     },
@@ -32,17 +32,17 @@ const myApp = new Vue({
                 visible : true,
                 messages : [
                     {
-                        date : "10/12/2022 15:30:55",
+                        date : "16:12",
                         message : "Ciao Domiziana",
                         stato : "sent"
                     },
                     {
-                        date : "10/12/2022 20:30:58",
+                        date : "16:12",
                         message : "Oggi a che ora ci vediamo?",
                         stato : "sent"
                     },
                     {
-                        date : "10/12/2022 22:35:58",
+                        date : "16:26",
                         message : "Mi dispiace, oggi non posso",
                         stato : "received"
                     },
@@ -54,12 +54,12 @@ const myApp = new Vue({
                 visible : true,
                 messages : [
                     {
-                        date : "10/12/2022 15:30:55",
+                        date : "20:45",
                         message : "Hai ricevuto la mail?",
                         stato : "sent"
                     },
                     {
-                        date : "10/12/2022 20:30:58",
+                        date : "20:48",
                         message : "Si, tutto ok!",
                         stato : "received"
                     },
@@ -71,22 +71,22 @@ const myApp = new Vue({
                 visible : true,
                 messages : [
                     {
-                        date : "10/12/2022 15:30:55",
+                        date : "11:34",
                         message : "Ci sei per una partita a biliardo?",
                         stato : "received"
                     },
                     {
-                        date : "10/12/2022 20:30:58",
+                        date : "11:40",
                         message : "Molto volentieri!",
                         stato : "sent"
                     },
                     {
-                        date : "10/12/2022 22:35:58",
+                        date : "11:42",
                         message : "Ci vediamo alle 17 al bar",
                         stato : "received"
                     },
                     {
-                        date : "10/12/2022 22:35:58",
+                        date : "11:45",
                         message : "A dopo.",
                         stato : "sent"
                     }
@@ -98,12 +98,12 @@ const myApp = new Vue({
                 visible : true,
                 messages : [
                     {
-                        date : "10/12/2022 15:30:55",
+                        date : "14:30",
                         message : "Guglielmo, hai pagato il fantacalcio?",
                         stato : "sent"
                     },
                     {
-                        date : "10/12/2022 20:30:58",
+                        date : "15:20",
                         message : "Scusa ma chi sei?",
                         stato : "received"
                     },
@@ -115,17 +115,17 @@ const myApp = new Vue({
                 visible : false,
                 messages : [
                     {
-                        date : "10/12/2022 15:30:55",
+                        date : "10:32",
                         message : "Oggi dobbiamo vincere!",
                         stato : "received"
                     },
                     {
-                        date : "10/12/2022 20:30:58",
+                        date : "10:41",
                         message : "Contaci!",
                         stato : "sent"
                     },
                     {
-                        date : "10/12/2022 22:35:58",
+                        date : "22:05",
                         message : "Non hai fatto un tiro oggi!",
                         stato : "received"
                     },
@@ -137,17 +137,17 @@ const myApp = new Vue({
                 visible : true,
                 messages : [
                     {
-                        date : "10/12/2022 15:30:55",
+                        date : "17:40",
                         message : "Hai consegnato il sito?",
                         stato : "sent"
                     },
                     {
-                        date : "10/12/2022 20:30:58",
+                        date : "17:43",
                         message : "Non ancora, ci sto lavorando, tu?",
                         stato : "received"
                     },
                     {
-                        date : "10/12/2022 22:35:58",
+                        date : "17:49",
                         message : "Idem",
                         stato : "sent"
                     },
@@ -159,17 +159,17 @@ const myApp = new Vue({
                 visible : false,
                 messages : [
                     {
-                        date : "10/12/2022 15:30:55",
+                        date : "08:23",
                         message : "Oggi partita online?",
                         stato : "sent"
                     },
                     {
-                        date : "10/12/2022 20:30:58",
+                        date : "08:23",
                         message : "Ho il pomeriggio libero",
                         stato : "sent"
                     },
                     {
-                        date : "10/12/2022 22:35:58",
+                        date : "10:14",
                         message : "Oggi no, ho il pc in manutenzione",
                         stato : "received"
                     },
