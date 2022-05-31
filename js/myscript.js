@@ -3,6 +3,7 @@ const myApp = new Vue({
     data : {
         activeChat : 0,
         newMessage : "",
+        searchText : "",
         contacts : [
             {
                 name : "Teodorica",
@@ -49,7 +50,7 @@ const myApp = new Vue({
                 ]
             },
             {
-                name : "Alice",
+                name : "Michela",
                 avatar : "img/icon3.png",
                 visible : true,
                 messages : [
@@ -205,7 +206,10 @@ const myApp = new Vue({
         },
 
         searchUsers(){
-            
+            let newArray = this.contacts.filter((element) => {
+                return element.name.toLowerCase().includes(this.searchText.toLowerCase);
+            });
+            console.log(newArray);
         }
     }
 });

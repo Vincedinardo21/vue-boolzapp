@@ -63,7 +63,7 @@
                     <!-- Search user area -->
                     <div class="search-user">
                         <a href="#"><i class="fas fa-search"></i></a>
-                        <input class="search-box" placeholder="Cerca o inizia una nuova chat">
+                        <input class="search-box" v-model="searchText" placeholder="Cerca o inizia una nuova chat" @keyup.enter="searchUsers">
                     </div>
 
                     <!-- Ciclo for -->
