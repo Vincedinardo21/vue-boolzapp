@@ -178,10 +178,13 @@ const myApp = new Vue({
         ]
     },
     methods : {
+        // Seleziono una chat
         clickOnChat(element){
             this.activeChat = element;
             console.log(this.contacts[element].name);
         },
+        
+        // Scrivo un messaggio e invio
         addMessage(){ 
             let thisContact = this.contacts[this.activeChat];           
             thisContact.messages.push({
@@ -191,6 +194,7 @@ const myApp = new Vue({
             });
             this.newMessage = "";
 
+            // Risposta utente dopo 1 sec
             setTimeout(() => {
                 thisContact.messages.push({
                     date : "11/12/2022 23:34:12",
