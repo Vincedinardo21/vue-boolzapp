@@ -77,7 +77,7 @@ h6 {
     display: flex;
     justify-content: space-between;
     padding: 15px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     align-items: center;
 }
 
@@ -103,10 +103,14 @@ h6 {
 
 /* Colonna di destra */
 .msg-area {
-    background-image: url("../img/whappback.jpg");
+    background-image: url("../img/whapp2.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}
+
+.msg-list {
+    padding: 20px;
 }
 
 .my-message {
@@ -124,11 +128,11 @@ h6 {
     width: 300px;
     border-radius: 10px;
     /* Debug */
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .my-message div {
-    background-color: aquamarine;
+    background-color: rgb(213, 249, 186);
 }
 
 .other-message div {
@@ -141,7 +145,11 @@ h6 {
 }
 
 .area-settings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: rgb(234, 234, 234);
+    height: 100%;
 }
 
 .group-settings {
@@ -155,7 +163,7 @@ h6 {
     align-items: center;
     width: 100%;
     height: 60px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     position: absolute;
     bottom: 0;
     background-color: rgba(234, 234, 234, 0.7);

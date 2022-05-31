@@ -183,7 +183,7 @@ const myApp = new Vue({
             this.activeChat = element;
             console.log(this.contacts[element].name);
         },
-        
+
         // Scrivo un messaggio e invio
         addMessage(){ 
             let thisContact = this.contacts[this.activeChat];           
@@ -202,6 +202,10 @@ const myApp = new Vue({
                     stato : "received"
                 });
             }, 1000);
+        },
+
+        searchUsers(){
+            
         }
     }
 });
