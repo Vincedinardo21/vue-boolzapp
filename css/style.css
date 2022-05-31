@@ -18,6 +18,25 @@
     padding: 10px;
 }
 
+.search-user {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    background-color: rgb(234, 234, 234);
+}
+
+.search-user .fa-search {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.search-box {
+    width: 330px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
 ul {
     list-style-type: none;
 }
