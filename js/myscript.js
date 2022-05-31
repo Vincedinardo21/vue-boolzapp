@@ -2,6 +2,7 @@ const myApp = new Vue({
     el : "#app",
     data : {
         activeChat : 0,
+        newMessage : "",
         contacts : [
             {
                 name : "Teodorica",
@@ -180,6 +181,23 @@ const myApp = new Vue({
         clickOnChat(element){
             this.activeChat = element;
             console.log(this.contacts[element].name);
+        },
+        addMessage(){ 
+            let thisContact = this.contacts[this.activeChat];           
+            thisContact.messages.push({
+                date : "10/12/2022 23:34:12",
+                message : this.newMessage,
+                stato : "sent"
+            });
+            this.newMessage = "";
+
+            setTimeout(() => {
+                thisContact.messages.push({
+                    date : "11/12/2022 23:34:12",
+                    message : "Ok",
+                    stato : "received"
+                });
+            }, 1000);
         }
     }
 });
