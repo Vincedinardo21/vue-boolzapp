@@ -206,10 +206,14 @@ const myApp = new Vue({
         },
 
         searchUsers(){
-            let newArray = this.contacts.filter((element) => {
-                return element.name.toLowerCase().includes(this.searchText.toLowerCase);
+            this.contacts.forEach(element => { 
+                if(element.name.toLowerCase().includes(this.searchText.toLowerCase())){
+                    element.visible = true;
+                } else {
+                    element.visible = false;
+                }    
             });
-            console.log(newArray);
+            //console.log(newArray);
         }
     }
 });

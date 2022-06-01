@@ -70,7 +70,7 @@
                     <div class="users-container">
                         <ul class="nopadding">
                             <li v-for="(item, i) in contacts" class="list-style" :key="i" :class="i === activeChat ? 'class-on-click' : ''" @click="clickOnChat(i)">
-                                <div class="user-profilo">
+                                <div class="user-profilo" :class="item.visible === true ? '' : 'hidden' ">
                                     <img :src="item.avatar" :alt="item.name">
                                     <div>
                                         <h6>{{item.name}}</h6>
